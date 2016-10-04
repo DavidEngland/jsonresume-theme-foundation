@@ -1,0 +1,27 @@
+{{#location}}
+    <!-- <div class="row"> -->
+        <div class="small-12 medium-6 large-6 columns">
+            <div id="location" class="callout-card radius">
+                <div class="callout-card-content">
+                    {{#if address}}
+                        <div class="address">
+                            {{address}}
+                        </div>
+                    {{/if}}
+                    {{#if city}}
+                        <span class="city">{{city}},&nbsp;</span>
+                    {{/if}}
+                    {{#if region}}
+                        <span class="region">{{region}}</span>
+                    {{/if}}
+                    {{#if postalCode}}
+                        <span class="postalCode">&nbsp;&nbsp;{{postalCode}}</span>
+                    {{/if}}
+                    {{#if countryCode}}
+                        <span class="countryCode">{{countryCode}}</span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+{{/location}}

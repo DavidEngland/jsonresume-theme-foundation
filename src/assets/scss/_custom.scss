@@ -1,22 +1,22 @@
 .header {
     background: #8a8a8a;
-}
 
-.header .columns {
-    padding-bottom: 0;
-}
+    .columns {
+        padding-bottom: 0;
+    }
 
-.header p {
-    color      : #fff;
-    padding-top: 15px;
-}
+    p {
+        color      : #ffffff;
+        padding-top: 15px;
+    }
 
-.header .wrapper-inner {
-    padding: 20px;
-}
+    .wrapper-inner {
+        padding: 20px;
+    }
 
-.header .container {
-    background: transparent;
+    .container {
+        background: transparent;
+    }
 }
 
 a[href^="mailto:"]:before {
@@ -47,17 +47,36 @@ blockquote:after {
     content: "\26A0";
 }
 
-#publications {
-    page-break-before: always;
+#education .gpa .value {
+    font-weight: 700;
 }
 
-#publications .publisher {
+#languages .fluency {
     font-style: italic;
 }
 
-.button.Twitter {
-    background  : #00aced !important;
-    border-color: #00aced;
+#location .postalCode {
+    font-weight: 700;
+}
+
+#publications {
+    page-break-before: always;
+
+    .publisher {
+        font-style: italic;
+    }
+
+    .releaseDate {
+        font-weight: 700;
+    }
+}
+
+#work .position {
+    font-weight: 700;
+}
+
+#references cite {
+    float: right;
 }
 
 a[href^="http:://twitter.com"]:before {
@@ -66,111 +85,21 @@ a[href^="http:://twitter.com"]:before {
     content     : "\1F426";
 }
 
-.button.Facebook {
-    background  : #3b5998 !important;
-    border-color: #3b5998;
-}
-
-.button.google-plus {
-    background  : #dd4b39 !important;
-    border-color: #dd4b39;
-}
-
-.button.G\+td {
-    background  : #dd4b39 !important;
-    border-color: #dd4b39;
-}
-
-.button.Pinterest {
-    background  : #cb2027 !important;
-    border-color: #cb2027;
-}
-
-.button.LinkedIn {
-    background  : #007bb6 !important;
-    border-color: #007bb6;
-}
-
-.button.YouTube {
-    background  : #bb0000 !important;
-    border-color: #bb0000;
-}
-
-.button.Vimeo {
-    background  : #aad450 !important;
-    border-color: #aad450;
-}
-
-.button.Tumblr {
-    background  : #32506d !important;
-    border-color: #32506d;
-}
-
-.button.InstaGram {
-    background  : #517fa4 !important;
-    border-color: #517fa4;
-}
-
-.button.Flickr {
-    background  : #ff0084 !important;
-    border-color: #ff0084;
-}
-
-.button.GitHub {
-    background  : #4078c0 !important;
-    border-color: #4078c0;
-}
-
-.button.Dribbble {
-    background  : #ea4c89 !important;
-    border-color: #ea4c89;
-}
-
-.button.Quora {
-    background  : #a82400 !important;
-    border-color: #a82400;
-}
-
-.button.FourSquare {
-    background  : #0072b1 !important;
-    border-color: #0072b1;
-}
-
-.button.Forrst {
-    background  : #5B9A68 !important;
-    border-color: #5B9A68;
-}
-
-.button.vk {
-    background  : #45668e !important;
-    border-color: #45668e;
-}
-
-.button.WordPress {
-    background  : #21759b !important;
-    border-color: #21759b;
-}
-
-.button.StumbleUpon {
-    background  : #EB4823 !important;
-    border-color: #EB4823;
-}
-
-.button.Yahoo {
-    background  : #7B0099 !important;
-    border-color: #7B0099;
-}
-
-.button.Blogger {
-    background  : #fb8f3d !important;
-    border-color: #fb8f3d;
-}
-
-.button.SoundCloud {
-    background  : #ff3a00 !important;
-    border-color: #ff3a00;
-}
-
 .wrapper.secondary {
     background: #f3f3f3;
+}
+
+.dates {
+    float     : right;
+    text-align: right;
+}
+
+.copywrite {
+    font-size: smaller;
+}
+@media only screen and (min-width: 40em) {
+    .dates {
+        float     : left;
+        text-align: left;
+    }
 }
