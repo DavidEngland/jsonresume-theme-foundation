@@ -9,6 +9,7 @@
   },
   "author": "David England <DavidEEngland@Outlook.com>",
   "license": "MIT",
+  "keywords": ["jsonresume","json","resume","theme","zurb","foundation","cv"],
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.7.2",
