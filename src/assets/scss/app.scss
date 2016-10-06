@@ -1,23 +1,17 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
-
+// @import 'motion-ui';
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-grid; // @include foundation-flex-grid;
 @include foundation-typography;
-@include foundation-button;
-// @include foundation-forms;
+@include foundation-button; // @include foundation-forms;
 // @include foundation-range-input;
-@include foundation-accordion;
-// @include foundation-accordion-menu;
+@include foundation-accordion; // @include foundation-accordion-menu;
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
 @include foundation-button-group;
-@include foundation-callout;
-// @include foundation-close-button;
+@include foundation-callout; // @include foundation-close-button;
 // @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
@@ -101,7 +95,7 @@
 }
 
 .github span {
-  background-color: #4183C4;
+    background-color: #4183C4;
 }
 
 .google-plus span {
@@ -109,7 +103,7 @@
 }
 
 .linkedin span {
-  background-color: #007bb6;
+    background-color: #007bb6;
 }
 
 .icon-button .fi-social-twitter {
@@ -120,8 +114,8 @@
     color: #3b5998;
 }
 
-.icon-button .fi-social-github  {
-  color: #4183C4;
+.icon-button .fi-social-github {
+    color: #4183C4;
 }
 
 .icon-button .fi-social-google-plus {
@@ -129,20 +123,23 @@
 }
 
 .icon-button .fi-social-linkedin {
-  color: #007bb6;
+    color: #007bb6;
 }
 
 .icon-button:hover .fi-social-facebook,
-.icon-button:hover .fi-social-linkedin,
 .icon-button:hover .fi-social-github,
 .icon-button:hover .fi-social-google-plus,
+.icon-button:hover .fi-social-linkedin,
 .icon-button:hover .fi-social-twitter {
     color      : white;
     font-size  : 2.6rem;
     line-height: 3.9rem;
 }
-
 @import "custom";
 @import "buttons-social";
 @import "components/callout-cards";
+
+body {
+    font-family: 'Titillium Web', 'Open Sans', sans-serif;
+}
 // @import "events";

@@ -56,13 +56,13 @@
       "[Jackson State Community College](http://jscc.edu)",
       "[Columbia State Community College](http://columbiastate.edu)",
       "[University of North Alabama](http://una.edu)",
-      "[ITT Tech - Madison, Alabama](http://www2.itt-tech.edu/places/campus/school.cfm?lloc_num=116)",
+      "[ITT Tech - Madison, Alabama](http://itt-tech.info)",
       "[Mars Hill Bible School](http://mhbs.org)"
       ]
   }, {
-    "company": "Marketing Intelligence Agency, Inc.",
-    "position": "Freelance Developer",
-    "website": "",
+    "company": "Real Estate Intelligence Agency, Inc.",
+    "position": "Freelance",
+    "website": "http://www.realestate-Huntsville.com",
     "startDate": "2012-10",
     "endDate": "",
     "summary": "Full Stack Developer",
@@ -72,7 +72,7 @@
       "Search Engine Optimization (**SEO**) specialist",
       "WordPress theme modifications",
       "CSS/LESS/SASS",
-      "Webmaster. PHP, Javascript, jQuery, and plugins."
+      "Webmaster: PHP, Javascript, jQuery, and plugins."
     ]
   }, {
     "company": "England Farms",
@@ -174,7 +174,7 @@
     "publisher": "American Meteorological Society",
     "website": "http://journals.ametsoc.org/doi/abs/10.1175/1520-0469%281995%29052%3C1602%3APOTSAB%3E2.0.CO%3B2"
   }, {
-    "name": "Stability functions based upon shear functions",
+    "name": "Stability Functions based upon Shear Functions",
     "releaseDate": "1995-04",
     "publisher": "Boundary Layer Meteorology",
     "website": "http://link.springer.com/article/10.1007%2FBF00715713"

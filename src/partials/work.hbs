@@ -2,58 +2,66 @@
     <div id="work">
         <h2>Work Experience</h2>
         {{#each resume.work}}
-            <div class="callout-card radius primary">
-                <div class="callout-card-content">
-                    {{#if position}}
-                        <div class="small-12 medium-6 large-5 columns">
-                            <span class="position">{{position}}</span>
-                        </div>
-                    {{else}}
-                        <div class="small-12 medium-4 large-4 columns"></div>
-                    {{/if}}
-                    {{#if company}}
-                        <div class="small-12 medium-6 large-5 large-centered columns">
-                            <p>
-                                {{#if website}}
-                                    <a href="{{website}}" target="_blank">{{company}}</a>
-                                {{else}}
-                                    {{company}}
-                                {{/if}}
-                            </p>
-                        </div>
-                    {{else}}
-                        <div class="small-12 medium-4 large-4 columns"></div>
-                    {{/if}}
-                    <div class="small-12 medium-6 large-2 columns">
-                        <p class="dates">
-                            {{#if startDate}}
-                                <span class="startDate">{{prettifyDate startDate}}</span>
-                            {{/if}}
-                            {{#if endDate}}
-                                <span class="endDate">&ndash;{{prettifyDate endDate}}</span>
+            <div class="row">
+                <div itemscope itemtype="http://schema.org/Organization" class="callout-card radius primary">
+                    <div class="row">
+                        <div class="callout-card-content">
+                          <div class="row">
+                            {{#if position}}
+                                <div class="small-12 medium-5 large-5 columns">
+                                    <span class="position">{{position}}</span>
+                                </div>
                             {{else}}
-                                <span class="endDate">&ndash;Present</span>
+                                <div class="small-12 medium-5 large-5 columns"></div>
                             {{/if}}
-                        </p>
-                    </div>
-                    {{#if summary}}
-                        <div class="row">
-                            <div class="large-12 columns">
-                                <p class="summary">{{summary}}</p>
+                            {{#if company}}
+                                <div class="small-12 medium-4 large-4 large-centered columns">
+                                    {{#if website}}
+                                        <a itemprop="url" href="{{website}}" target="_blank"><span itemprop="name">{{company}}</span></a>
+                                    {{else}}
+                                        <span itemprop="name">{{company}}</span>
+                                    {{/if}}
+                                </div>
+                            {{else}}
+                                <div class="small-12 medium-4 large-4 columns"></div>
+                            {{/if}}
+                            <div class="small-12 medium-3 large-3 columns">
+                                <p class="dates">
+                                    {{#if startDate}}
+                                        <span class="startDate">{{prettifyDate startDate}}</span>&nbsp;&ndash;&nbsp;
+                                    {{/if}}
+                                    {{#if endDate}}
+                                        <span class="endDate">{{prettifyDate endDate}}</span>
+                                    {{else}}
+                                        <span class="endDate">Present</span>
+                                    {{/if}}
+                                </p>
                             </div>
+                          </div>
+                        <div class="row">
+                            {{#if summary}}
+                                <div class="small-12 medium-12 large-12 columns">
+                                    <div class="lead summary">{{summary}}</div>
+                                </div>
+                            {{/if}}
                         </div>
-                    {{/if}}
-                    {{#if highlights.length}}
-                        <ul class="highlights">
-                            {{#each highlights}}
-                                <li>
-                                    {{#markdown}}{{.}}{{/markdown}}
-                                </li>
-                            {{/each}}
-                        </ul>
-                    {{/if}}
+                        {{#if highlights.length}}
+                            <div class="row">
+                                <div class="small-12 medium-12 large-12 columns">
+                                    <ul class="highlights">
+                                        {{#each highlights}}
+                                            <li>
+                                                {{#markdown}}{{.}}{{/markdown}}
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+                        {{/if}}
+                    </div>
                 </div>
             </div>
+          </div>
         {{/each}}
     </div>
 {{/if}}

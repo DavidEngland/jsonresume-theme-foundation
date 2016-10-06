@@ -2,7 +2,7 @@
     <div id="education">
         <h2>Education</h2>
         {{#each resume.education}}
-            <div class="callout-card radius secondary">
+            <div itemscope itemtype="http://schema.org/EducationalOrganization" class="callout-card radius secondary">
                 <div class="callout-card-content">
                     {{#if studyType}}
                         <div class="small-6 medium-2 large-2 columns">
@@ -26,18 +26,18 @@
                     {{/if}}
                     {{#if institution}}
                         <div class="small-12 medium-4 large-4 large-centered columns">
-                            <span class="institution">{{#markdown}}{{institution}}{{/markdown}}</span>
+                            <span itemprop="name" class="institution">{{#markdown}}{{institution}}{{/markdown}}</span>
                         </div>
                     {{/if}}
                     <div class="small-6 medium-2 large-3 columns">
                         <p class="dates">
                             {{#if startDate}}
-                                <span class="startDate">{{prettifyDate startDate}}</span>
+                                <span class="startDate">{{prettifyDate startDate}}</span>&nbsp;&ndash;&nbsp;
                             {{/if}}
                             {{#if endDate}}
-                                <span class="endDate">&ndash;{{prettifyDate endDate}}</span>
+                                <span class="endDate">{{prettifyDate endDate}}</span>
                             {{else}}
-                                <span class="endDate">&ndash;Present</span>
+                                <span class="endDate">Present</span>
                             {{/if}}
                         </p>
                     </div>

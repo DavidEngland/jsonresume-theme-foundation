@@ -89,17 +89,16 @@ a[href^="http:://twitter.com"]:before {
     background: #f3f3f3;
 }
 
-.dates {
-    float     : right;
-    text-align: right;
-}
-
 .copywrite {
     font-size: smaller;
 }
-@media only screen and (min-width: 40em) {
+
     .dates {
-        float     : left;
+        text-align: right;
+    }
+
+@media only screen and (max-width: 40em) {
+    .dates {
         text-align: left;
     }
 }
