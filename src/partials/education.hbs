@@ -2,7 +2,7 @@
     <div id="education">
         <h2>Education</h2>
         {{#each resume.education}}
-            <div itemscope itemtype="http://schema.org/EducationalOrganization" class="callout-card radius secondary">
+            <div itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization" class="callout-card radius secondary">
                 <div class="callout-card-content">
                     {{#if studyType}}
                         <div class="small-6 medium-2 large-2 columns">
